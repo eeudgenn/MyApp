@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">myApp</string>
+    <string name="good_s_price_">good\'s price</string>
+    <string name="add">+</string>
+    <string name="good_s_call">good\'s call</string>
+    <string name="price">price</string>
+    <string name="plus">+</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
