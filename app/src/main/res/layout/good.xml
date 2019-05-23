@@ -10,28 +10,29 @@
     <TextView
         android:id="@+id/price"
         android:layout_width="wrap_content"
-
-        android:textSize="30sp"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@id/call"
+        android:layout_alignBottom="@+id/call"
         android:layout_alignParentEnd="true"
+        android:paddingRight="10dp"
         android:textColor="@android:color/black"
-        tools:text="50"
-        tools:ignore="SmallSp" />
+        android:textSize="20sp"
+        tools:ignore="SmallSp"
+        tools:text="50" />
 
     <TextView
         android:id="@+id/call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/price"
-        android:layout_alignBottom="@+id/price"
+
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@id/price"
-        android:gravity="center_vertical|center_horizontal"
+        android:gravity="left|center_vertical|center_horizontal"
         android:paddingStart="@dimen/padding2"
-        android:textAlignment="center"
+        android:textAlignment="gravity"
         android:textColor="@android:color/black"
         android:textSize="30sp"
-        tools:ignore="RtlSymmetry,SmallSp,SpUsage"
+        tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp,SpUsage"
         tools:text="ffff" />
 
 </RelativeLayout>

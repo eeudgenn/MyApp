@@ -9,38 +9,44 @@
 
     <EditText
         android:id="@+id/call"
-        android:layout_width="wrap_content"
+        android:layout_width="221dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:autofillHints=""
         android:hint="call"
         android:inputType=""
-        app:layout_constraintBaseline_toBaselineOf="@+id/price"
-        app:layout_constraintStart_toStartOf="@+id/Goods"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText"
         tools:targetApi="o" />
 
-    <EditText
+    <TextView
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="44dp"
         android:hint="@string/price"
         android:importantForAutofill="no"
         android:inputType=""
-        app:layout_constraintStart_toEndOf="@+id/call"
         app:layout_constraintTop_toTopOf="parent"
-        tools:targetApi="o" />
+        tools:layout_editor_absoluteX="317dp"
+        tools:targetApi="o"
+        tools:ignore="MissingConstraints" />
 
 
     <Button
         android:id="@+id/add"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/plus"
-        app:layout_constraintStart_toStartOf="@+id/price"
-        tools:ignore="MissingConstraints,RtlHardcoded"
-        tools:layout_editor_absoluteY="21dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -59,12 +65,16 @@
     <ListView
         android:id="@+id/Goods"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
         android:dividerHeight="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/call"
+        app:layout_constraintVertical_bias="0.609"
         tools:listitem="@layout/good">
 
     </ListView>
